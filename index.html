@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《重组A型肉毒毒素临床应用中国专家共识》参考文献（按章节）</title>
+<style>
+  :root {
+    --bg: #f6f8fb;
+    --card: #ffffff;
+    --ink: #1a2332;
+    --muted: #5b6b7c;
+    --accent: #0b6e6e;
+    --accent-soft: #e6f3f3;
+    --line: #e2e8f0;
+    --nav-w: 260px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+  }
+  header.hero {
+    background: linear-gradient(135deg, #0b6e6e 0%, #0a4f6c 100%);
+    color: #fff;
+    padding: 2.2rem 1.5rem 1.8rem;
+  }
+  header.hero .wrap { max-width: 1100px; margin: 0 auto; }
+  header.hero h1 {
+    margin: 0 0 0.6rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  header.hero p {
+    margin: 0;
+    opacity: 0.92;
+    font-size: 0.95rem;
+  }
+  .layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: var(--nav-w) 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem 1rem 3rem;
+    align-items: start;
+  }
+  nav.toc {
+    position: sticky;
+    top: 1rem;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 0.75rem;
+    max-height: calc(100vh - 2rem);
+    overflow: auto;
+    box-shadow: 0 1px 2px rgba(16,24,40,.04);
+  }
+  nav.toc h2 {
+    margin: 0 0 0.6rem;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  nav.toc a {
+    display: block;
+    padding: 0.4rem 0.55rem;
+    margin: 0.1rem 0;
+    border-radius: 8px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.88rem;
+  }
+  nav.toc a:hover, nav.toc a.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  main { min-width: 0; }
+  .chapter, .index-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.25rem 1.35rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(16,24,40,.04);
+  }
+  .chapter h2, .index-card h2 {
+    margin: 0 0 0.35rem;
+    font-size: 1.15rem;
+    color: var(--accent);
+  }
+  .meta {
+    margin: 0 0 0.9rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .empty {
+    margin: 0;
+    color: var(--muted);
+    font-style: italic;
+  }
+  ul.refs, ul.index {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.refs li, ul.index li {
+    padding: 0.55rem 0.65rem;
+    border-top: 1px dashed var(--line);
+    display: flex;
+    gap: 0.65rem;
+    align-items: flex-start;
+    font-size: 0.95rem;
+  }
+  ul.refs li:first-child, ul.index li:first-child { border-top: none; }
+  .num {
+    flex: 0 0 auto;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    min-width: 2.4rem;
+  }
+  ul.index li { display: block; }
+  ul.index .num { margin-right: 0.4rem; }
+  ul.index a { color: var(--accent); text-decoration: none; }
+  ul.index a:hover { text-decoration: underline; }
+  footer {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .filter-bar {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-bar label { font-size: 0.85rem; color: var(--muted); }
+  .filter-bar input {
+    flex: 1;
+    min-width: 180px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: 1fr; }
+    nav.toc { position: relative; top: 0; max-height: none; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>《重组A型肉毒毒素临床应用中国专家共识》参考文献（按章节）</h1>
+    <p>按章节归类展示引用编号 · 共 78 条唯一文献编号（1–78）· 完整题录待文献包补齐后更新</p>
+  </div>
+</header>
+<div class="layout">
+  <nav class="toc" aria-label="章节导航">
+    <h2>章节导航</h2>
+    <a href="#ch1">1. 引言</a>
+<a href="#ch2">2. 共识制定的必要性</a>
+<a href="#ch3">3. 共识制定方法学</a>
+<a href="#ch4">4. 重组技术与芮妥欣药理基础及临床证据</a>
+<a href="#ch5">5. 解剖原理</a>
+<a href="#ch6">6. 核心目标与治疗路径</a>
+<a href="#ch7">7. 临床评估体系</a>
+<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>
+<a href="#ch9">9. 不良反应及管理</a>
+<a href="#ch10">10. 随访</a>
+<a href="#ch11">11. 总结与结论</a>
+    <a href="#index">编号索引</a>
+  </nav>
+  <main>
+    <div class="filter-bar">
+      <label for="q">筛选编号</label>
+      <input id="q" type="search" placeholder="例如输入 12 或 32–66" autocomplete="off">
+    </div>
+    <section id="ch1" class="chapter">
+  <h2>1. 引言</h2>
+  <p class="meta">原始编号：1–12 · 共 12 条</p>
+  <ul class="refs">
+<li id="ref-1-ch1"><span class="num">[1]</span> 文献条目待补</li>
+<li id="ref-2-ch1"><span class="num">[2]</span> 文献条目待补</li>
+<li id="ref-3-ch1"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-4-ch1"><span class="num">[4]</span> 文献条目待补</li>
+<li id="ref-5-ch1"><span class="num">[5]</span> 文献条目待补</li>
+<li id="ref-6-ch1"><span class="num">[6]</span> 文献条目待补</li>
+<li id="ref-7-ch1"><span class="num">[7]</span> 文献条目待补</li>
+<li id="ref-8-ch1"><span class="num">[8]</span> 文献条目待补</li>
+<li id="ref-9-ch1"><span class="num">[9]</span> 文献条目待补</li>
+<li id="ref-10-ch1"><span class="num">[10]</span> 文献条目待补</li>
+<li id="ref-11-ch1"><span class="num">[11]</span> 文献条目待补</li>
+<li id="ref-12-ch1"><span class="num">[12]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch2" class="chapter">
+  <h2>2. 共识制定的必要性</h2>
+  <p class="meta">原始编号：2, 3, 6 · 共 3 条</p>
+  <ul class="refs">
+<li id="ref-2-ch2"><span class="num">[2]</span> 文献条目待补</li>
+<li id="ref-3-ch2"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-6-ch2"><span class="num">[6]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch3" class="chapter">
+  <h2>3. 共识制定方法学</h2>
+  <p class="meta">原始编号：/</p>
+  <p class="empty">本章暂无引用文献</p>
+</section>
+<section id="ch4" class="chapter">
+  <h2>4. 重组技术与芮妥欣药理基础及临床证据</h2>
+  <p class="meta">原始编号：10–14 · 共 5 条</p>
+  <ul class="refs">
+<li id="ref-10-ch4"><span class="num">[10]</span> 文献条目待补</li>
+<li id="ref-11-ch4"><span class="num">[11]</span> 文献条目待补</li>
+<li id="ref-12-ch4"><span class="num">[12]</span> 文献条目待补</li>
+<li id="ref-13-ch4"><span class="num">[13]</span> 文献条目待补</li>
+<li id="ref-14-ch4"><span class="num">[14]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch5" class="chapter">
+  <h2>5. 解剖原理</h2>
+  <p class="meta">原始编号：2, 3, 5, 15–19 · 共 8 条</p>
+  <ul class="refs">
+<li id="ref-2-ch5"><span class="num">[2]</span> 文献条目待补</li>
+<li id="ref-3-ch5"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-5-ch5"><span class="num">[5]</span> 文献条目待补</li>
+<li id="ref-15-ch5"><span class="num">[15]</span> 文献条目待补</li>
+<li id="ref-16-ch5"><span class="num">[16]</span> 文献条目待补</li>
+<li id="ref-17-ch5"><span class="num">[17]</span> 文献条目待补</li>
+<li id="ref-18-ch5"><span class="num">[18]</span> 文献条目待补</li>
+<li id="ref-19-ch5"><span class="num">[19]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch6" class="chapter">
+  <h2>6. 核心目标与治疗路径</h2>
+  <p class="meta">原始编号：3, 6, 13, 17, 19–27 · 共 13 条</p>
+  <ul class="refs">
+<li id="ref-3-ch6"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-6-ch6"><span class="num">[6]</span> 文献条目待补</li>
+<li id="ref-13-ch6"><span class="num">[13]</span> 文献条目待补</li>
+<li id="ref-17-ch6"><span class="num">[17]</span> 文献条目待补</li>
+<li id="ref-19-ch6"><span class="num">[19]</span> 文献条目待补</li>
+<li id="ref-20-ch6"><span class="num">[20]</span> 文献条目待补</li>
+<li id="ref-21-ch6"><span class="num">[21]</span> 文献条目待补</li>
+<li id="ref-22-ch6"><span class="num">[22]</span> 文献条目待补</li>
+<li id="ref-23-ch6"><span class="num">[23]</span> 文献条目待补</li>
+<li id="ref-24-ch6"><span class="num">[24]</span> 文献条目待补</li>
+<li id="ref-25-ch6"><span class="num">[25]</span> 文献条目待补</li>
+<li id="ref-26-ch6"><span class="num">[26]</span> 文献条目待补</li>
+<li id="ref-27-ch6"><span class="num">[27]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch7" class="chapter">
+  <h2>7. 临床评估体系</h2>
+  <p class="meta">原始编号：3, 6–9, 22, 23, 25, 28–31 · 共 12 条</p>
+  <ul class="refs">
+<li id="ref-3-ch7"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-6-ch7"><span class="num">[6]</span> 文献条目待补</li>
+<li id="ref-7-ch7"><span class="num">[7]</span> 文献条目待补</li>
+<li id="ref-8-ch7"><span class="num">[8]</span> 文献条目待补</li>
+<li id="ref-9-ch7"><span class="num">[9]</span> 文献条目待补</li>
+<li id="ref-22-ch7"><span class="num">[22]</span> 文献条目待补</li>
+<li id="ref-23-ch7"><span class="num">[23]</span> 文献条目待补</li>
+<li id="ref-25-ch7"><span class="num">[25]</span> 文献条目待补</li>
+<li id="ref-28-ch7"><span class="num">[28]</span> 文献条目待补</li>
+<li id="ref-29-ch7"><span class="num">[29]</span> 文献条目待补</li>
+<li id="ref-30-ch7"><span class="num">[30]</span> 文献条目待补</li>
+<li id="ref-31-ch7"><span class="num">[31]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch8" class="chapter">
+  <h2>8. 重组A型肉毒毒素临床干预</h2>
+  <p class="meta">原始编号：2, 3, 6, 12, 32–66 · 共 39 条</p>
+  <ul class="refs">
+<li id="ref-2-ch8"><span class="num">[2]</span> 文献条目待补</li>
+<li id="ref-3-ch8"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-6-ch8"><span class="num">[6]</span> 文献条目待补</li>
+<li id="ref-12-ch8"><span class="num">[12]</span> 文献条目待补</li>
+<li id="ref-32-ch8"><span class="num">[32]</span> 文献条目待补</li>
+<li id="ref-33-ch8"><span class="num">[33]</span> 文献条目待补</li>
+<li id="ref-34-ch8"><span class="num">[34]</span> 文献条目待补</li>
+<li id="ref-35-ch8"><span class="num">[35]</span> 文献条目待补</li>
+<li id="ref-36-ch8"><span class="num">[36]</span> 文献条目待补</li>
+<li id="ref-37-ch8"><span class="num">[37]</span> 文献条目待补</li>
+<li id="ref-38-ch8"><span class="num">[38]</span> 文献条目待补</li>
+<li id="ref-39-ch8"><span class="num">[39]</span> 文献条目待补</li>
+<li id="ref-40-ch8"><span class="num">[40]</span> 文献条目待补</li>
+<li id="ref-41-ch8"><span class="num">[41]</span> 文献条目待补</li>
+<li id="ref-42-ch8"><span class="num">[42]</span> 文献条目待补</li>
+<li id="ref-43-ch8"><span class="num">[43]</span> 文献条目待补</li>
+<li id="ref-44-ch8"><span class="num">[44]</span> 文献条目待补</li>
+<li id="ref-45-ch8"><span class="num">[45]</span> 文献条目待补</li>
+<li id="ref-46-ch8"><span class="num">[46]</span> 文献条目待补</li>
+<li id="ref-47-ch8"><span class="num">[47]</span> 文献条目待补</li>
+<li id="ref-48-ch8"><span class="num">[48]</span> 文献条目待补</li>
+<li id="ref-49-ch8"><span class="num">[49]</span> 文献条目待补</li>
+<li id="ref-50-ch8"><span class="num">[50]</span> 文献条目待补</li>
+<li id="ref-51-ch8"><span class="num">[51]</span> 文献条目待补</li>
+<li id="ref-52-ch8"><span class="num">[52]</span> 文献条目待补</li>
+<li id="ref-53-ch8"><span class="num">[53]</span> 文献条目待补</li>
+<li id="ref-54-ch8"><span class="num">[54]</span> 文献条目待补</li>
+<li id="ref-55-ch8"><span class="num">[55]</span> 文献条目待补</li>
+<li id="ref-56-ch8"><span class="num">[56]</span> 文献条目待补</li>
+<li id="ref-57-ch8"><span class="num">[57]</span> 文献条目待补</li>
+<li id="ref-58-ch8"><span class="num">[58]</span> 文献条目待补</li>
+<li id="ref-59-ch8"><span class="num">[59]</span> 文献条目待补</li>
+<li id="ref-60-ch8"><span class="num">[60]</span> 文献条目待补</li>
+<li id="ref-61-ch8"><span class="num">[61]</span> 文献条目待补</li>
+<li id="ref-62-ch8"><span class="num">[62]</span> 文献条目待补</li>
+<li id="ref-63-ch8"><span class="num">[63]</span> 文献条目待补</li>
+<li id="ref-64-ch8"><span class="num">[64]</span> 文献条目待补</li>
+<li id="ref-65-ch8"><span class="num">[65]</span> 文献条目待补</li>
+<li id="ref-66-ch8"><span class="num">[66]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch9" class="chapter">
+  <h2>9. 不良反应及管理</h2>
+  <p class="meta">原始编号：3, 12, 18, 32, 67–76 · 共 14 条</p>
+  <ul class="refs">
+<li id="ref-3-ch9"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-12-ch9"><span class="num">[12]</span> 文献条目待补</li>
+<li id="ref-18-ch9"><span class="num">[18]</span> 文献条目待补</li>
+<li id="ref-32-ch9"><span class="num">[32]</span> 文献条目待补</li>
+<li id="ref-67-ch9"><span class="num">[67]</span> 文献条目待补</li>
+<li id="ref-68-ch9"><span class="num">[68]</span> 文献条目待补</li>
+<li id="ref-69-ch9"><span class="num">[69]</span> 文献条目待补</li>
+<li id="ref-70-ch9"><span class="num">[70]</span> 文献条目待补</li>
+<li id="ref-71-ch9"><span class="num">[71]</span> 文献条目待补</li>
+<li id="ref-72-ch9"><span class="num">[72]</span> 文献条目待补</li>
+<li id="ref-73-ch9"><span class="num">[73]</span> 文献条目待补</li>
+<li id="ref-74-ch9"><span class="num">[74]</span> 文献条目待补</li>
+<li id="ref-75-ch9"><span class="num">[75]</span> 文献条目待补</li>
+<li id="ref-76-ch9"><span class="num">[76]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch10" class="chapter">
+  <h2>10. 随访</h2>
+  <p class="meta">原始编号：2, 3, 12, 17, 20, 23, 34, 39, 41, 50, 77, 78 · 共 12 条</p>
+  <ul class="refs">
+<li id="ref-2-ch10"><span class="num">[2]</span> 文献条目待补</li>
+<li id="ref-3-ch10"><span class="num">[3]</span> 文献条目待补</li>
+<li id="ref-12-ch10"><span class="num">[12]</span> 文献条目待补</li>
+<li id="ref-17-ch10"><span class="num">[17]</span> 文献条目待补</li>
+<li id="ref-20-ch10"><span class="num">[20]</span> 文献条目待补</li>
+<li id="ref-23-ch10"><span class="num">[23]</span> 文献条目待补</li>
+<li id="ref-34-ch10"><span class="num">[34]</span> 文献条目待补</li>
+<li id="ref-39-ch10"><span class="num">[39]</span> 文献条目待补</li>
+<li id="ref-41-ch10"><span class="num">[41]</span> 文献条目待补</li>
+<li id="ref-50-ch10"><span class="num">[50]</span> 文献条目待补</li>
+<li id="ref-77-ch10"><span class="num">[77]</span> 文献条目待补</li>
+<li id="ref-78-ch10"><span class="num">[78]</span> 文献条目待补</li>
+</ul>
+</section>
+<section id="ch11" class="chapter">
+  <h2>11. 总结与结论</h2>
+  <p class="meta">原始编号：/</p>
+  <p class="empty">本章暂无引用文献</p>
+</section>
+    <section id="index" class="index-card">
+      <h2>编号索引</h2>
+      <p class="meta">每个编号下列出引用该文献的章节，便于交叉查阅。</p>
+      <ul class="index">
+        <li><span class="num">[1]</span> 见于：<a href="#ch1">1. 引言</a></li>
+<li><span class="num">[2]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch2">2. 共识制定的必要性</a>、<a href="#ch5">5. 解剖原理</a>、<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[3]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch2">2. 共识制定的必要性</a>、<a href="#ch5">5. 解剖原理</a>、<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch7">7. 临床评估体系</a>、<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch9">9. 不良反应及管理</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[4]</span> 见于：<a href="#ch1">1. 引言</a></li>
+<li><span class="num">[5]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch5">5. 解剖原理</a></li>
+<li><span class="num">[6]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch2">2. 共识制定的必要性</a>、<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch7">7. 临床评估体系</a>、<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[7]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[8]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[9]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[10]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch4">4. 重组技术与芮妥欣药理基础及临床证据</a></li>
+<li><span class="num">[11]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch4">4. 重组技术与芮妥欣药理基础及临床证据</a></li>
+<li><span class="num">[12]</span> 见于：<a href="#ch1">1. 引言</a>、<a href="#ch4">4. 重组技术与芮妥欣药理基础及临床证据</a>、<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch9">9. 不良反应及管理</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[13]</span> 见于：<a href="#ch4">4. 重组技术与芮妥欣药理基础及临床证据</a>、<a href="#ch6">6. 核心目标与治疗路径</a></li>
+<li><span class="num">[14]</span> 见于：<a href="#ch4">4. 重组技术与芮妥欣药理基础及临床证据</a></li>
+<li><span class="num">[15]</span> 见于：<a href="#ch5">5. 解剖原理</a></li>
+<li><span class="num">[16]</span> 见于：<a href="#ch5">5. 解剖原理</a></li>
+<li><span class="num">[17]</span> 见于：<a href="#ch5">5. 解剖原理</a>、<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[18]</span> 见于：<a href="#ch5">5. 解剖原理</a>、<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[19]</span> 见于：<a href="#ch5">5. 解剖原理</a>、<a href="#ch6">6. 核心目标与治疗路径</a></li>
+<li><span class="num">[20]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[21]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a></li>
+<li><span class="num">[22]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[23]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch7">7. 临床评估体系</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[24]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a></li>
+<li><span class="num">[25]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a>、<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[26]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a></li>
+<li><span class="num">[27]</span> 见于：<a href="#ch6">6. 核心目标与治疗路径</a></li>
+<li><span class="num">[28]</span> 见于：<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[29]</span> 见于：<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[30]</span> 见于：<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[31]</span> 见于：<a href="#ch7">7. 临床评估体系</a></li>
+<li><span class="num">[32]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[33]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[34]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[35]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[36]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[37]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[38]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[39]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[40]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[41]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[42]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[43]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[44]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[45]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[46]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[47]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[48]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[49]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[50]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a>、<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[51]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[52]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[53]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[54]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[55]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[56]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[57]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[58]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[59]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[60]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[61]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[62]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[63]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[64]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[65]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[66]</span> 见于：<a href="#ch8">8. 重组A型肉毒毒素临床干预</a></li>
+<li><span class="num">[67]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[68]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[69]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[70]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[71]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[72]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[73]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[74]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[75]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[76]</span> 见于：<a href="#ch9">9. 不良反应及管理</a></li>
+<li><span class="num">[77]</span> 见于：<a href="#ch10">10. 随访</a></li>
+<li><span class="num">[78]</span> 见于：<a href="#ch10">10. 随访</a></li>
+      </ul>
+    </section>
+  </main>
+</div>
+<footer>
+  本页仅展示章节—文献编号对应关系，不含文献全文或受版权保护的 PDF。部署自静态站点。
+</footer>
+<script>
+(function(){
+  const input = document.getElementById('q');
+  const chapters = document.querySelectorAll('.chapter');
+  const indexItems = document.querySelectorAll('.index li');
+  function parseQuery(raw){
+    raw = (raw||'').trim();
+    if(!raw) return null;
+    const set = new Set();
+    raw.split(/[,，\s]+/).forEach(tok=>{
+      const m = tok.match(/^(\d+)\s*[–—\-]\s*(\d+)$/);
+      if(m){
+        let a=+m[1], b=+m[2];
+        if(a>b){const t=a;a=b;b=t;}
+        for(let i=a;i<=b;i++) set.add(i);
+      } else if(/^\d+$/.test(tok)) set.add(+tok);
+    });
+    return set.size ? set : null;
+  }
+  function apply(){
+    const set = parseQuery(input.value);
+    chapters.forEach(sec=>{
+      const lis = sec.querySelectorAll('.refs li');
+      if(!lis.length){ sec.style.display = set ? 'none' : ''; return; }
+      let any=false;
+      lis.forEach(li=>{
+        const m = li.querySelector('.num').textContent.match(/\d+/);
+        const n = m ? +m[0] : -1;
+        const show = !set || set.has(n);
+        li.style.display = show ? '' : 'none';
+        if(show) any=true;
+      });
+      sec.style.display = any || !set ? '' : 'none';
+    });
+    indexItems.forEach(li=>{
+      const m = li.querySelector('.num').textContent.match(/\d+/);
+      const n = m ? +m[0] : -1;
+      li.style.display = (!set || set.has(n)) ? '' : 'none';
+    });
+  }
+  input.addEventListener('input', apply);
+
+  // sticky nav active state
+  const links = document.querySelectorAll('nav.toc a');
+  const map = [...links].map(a => {
+    const id = a.getAttribute('href').slice(1);
+    return {a, el: document.getElementById(id)};
+  }).filter(x=>x.el);
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        links.forEach(l=>l.classList.remove('active'));
+        const hit = map.find(x=>x.el===e.target);
+        if(hit) hit.a.classList.add('active');
+      }
+    });
+  }, {rootMargin: '-20% 0px -70% 0px', threshold: 0});
+  map.forEach(x=>io.observe(x.el));
+})();
+</script>
+</body>
+</html>
